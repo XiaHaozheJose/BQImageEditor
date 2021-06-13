@@ -5,13 +5,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/ZLImageEditor.svg?style=flat)](http://cocoadocs.org/docsets/ZLImageEditor)
 ![Language](https://img.shields.io/badge/Language-%20Swift%20-E57141.svg)
 
-<img src="https://github.com/longitachi/ImageFolder/blob/master/ZLImageEditor/ZLImageEditor.png" width = "277" height = "600" div align=center/>
 
----------------
-
-ZLImageEditor is a powerful image editor framework. Supports graffiti, cropping, mosaic, text stickers, picture stickers, filters.
-
-ZLImageEditor is extracted from [ZLPhotoBrowser](https://github.com/longitachi/ZLPhotoBrowser).
 
 ### Directory
 * [Features](#Features)
@@ -44,7 +38,7 @@ ZLEditImageViewController.showEditImageVC(parentVC: self, image: image, editMode
 ```
 
 ### <a id="Languages"></a>Languages
-🇨🇳 Chinese, 🇺🇸 English, 🇯🇵 Japanese, 🇫🇷 French, 🇩🇪 German, 🇷🇺 Russian, 🇻🇳 Vietnamese, 🇰🇷 Korean, 🇲🇾 Malay, 🇮🇹 Italian.
+🇨🇳 Chinese, 🇺🇸 English, 🇯🇵 Japanese, 🇫🇷 French, 🇩🇪 German, 🇷🇺 Russian, 🇻🇳 Vietnamese, 🇰🇷 Korean, 🇲🇾 Malay, 🇮🇹 Italian, 🇪🇸Spanish.
 
 ### <a id="Installation"></a>Installation
 There are four ways to use ZLImageEditor in your project:
@@ -65,7 +59,7 @@ use_frameworks!
 target 'MyApp' do
   # your other pod
   # ...
-  pod 'ZLImageEditor'
+  pod 'BQImageEditor'
 end
 ```
 
@@ -81,17 +75,17 @@ $ pod install
 To integrate ZLImageEditor into your Xcode project using Carthage, specify it in your Cartfile:
 
 ```
-github "longitachi/ZLImageEditor"
+github "longitachi/BQImageEditor"
 ```
 
 Then, run the following command to build the ZLImageEditor framework:
 
 ```
-$ carthage update ZLImageEditor
+$ carthage update BQImageEditor
 ```
 
 #### Swift Package Manager
-1. Select File > Swift Packages > Add Package Dependency. Enter https://github.com/longitachi/ZLImageEditor.git in the "Choose Package Repository" dialog.
+1. Select File > Swift Packages > Add Package Dependency. Enter https://github.com/longitachi/BQImageEditor.git in the "Choose Package Repository" dialog.
 2. In the next page, specify the version resolving rule as "Up to Next Major" with "4.0.9" as its earliest version.
 3. After Xcode checking out the source and resolving the version, you can choose the "ZLImageEditor" library and add it to your app target.
 

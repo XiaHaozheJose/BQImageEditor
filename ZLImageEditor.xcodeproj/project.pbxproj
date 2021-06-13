@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70EC86FC26762643008E4338 /* ZLImageEditor.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 70EC86FB26762643008E4338 /* ZLImageEditor.bundle */; };
 		E40208DC256B9BA60077F5DC /* ZLImageEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = E40208DA256B9BA60077F5DC /* ZLImageEditor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E40208EB256B9F9C0077F5DC /* ZLEditImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40208E4256B9F9C0077F5DC /* ZLEditImageViewController.swift */; };
 		E40208EC256B9F9C0077F5DC /* ZLImageStickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40208E5256B9F9C0077F5DC /* ZLImageStickerView.swift */; };
@@ -20,7 +21,6 @@
 		E40208FE256BA0080077F5DC /* String+ZLImageEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40208FA256BA0080077F5DC /* String+ZLImageEditor.swift */; };
 		E40208FF256BA0080077F5DC /* Bundle+ZLImageEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40208FB256BA0080077F5DC /* Bundle+ZLImageEditor.swift */; };
 		E4020900256BA0080077F5DC /* Cell+ZLImageEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40208FC256BA0080077F5DC /* Cell+ZLImageEditor.swift */; };
-		E4020905256BA0390077F5DC /* ZLImageEditor.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E4020904256BA0390077F5DC /* ZLImageEditor.bundle */; };
 		E402090A256BA1DE0077F5DC /* ZLImageEditorDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4020909256BA1DE0077F5DC /* ZLImageEditorDefine.swift */; };
 		E402090E256BA1F40077F5DC /* ZLImageEditorLanguageDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E402090D256BA1F40077F5DC /* ZLImageEditorLanguageDefine.swift */; };
 		E4020912256BA27D0077F5DC /* ZLImageEditorConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4020911256BA27D0077F5DC /* ZLImageEditorConfiguration.swift */; };
@@ -28,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		70EC86FB26762643008E4338 /* ZLImageEditor.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZLImageEditor.bundle; sourceTree = "<group>"; };
 		E40208D7256B9BA60077F5DC /* ZLImageEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZLImageEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E40208DA256B9BA60077F5DC /* ZLImageEditor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLImageEditor.h; sourceTree = "<group>"; };
 		E40208DB256B9BA60077F5DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,7 +44,6 @@
 		E40208FA256BA0080077F5DC /* String+ZLImageEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+ZLImageEditor.swift"; sourceTree = "<group>"; };
 		E40208FB256BA0080077F5DC /* Bundle+ZLImageEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+ZLImageEditor.swift"; sourceTree = "<group>"; };
 		E40208FC256BA0080077F5DC /* Cell+ZLImageEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cell+ZLImageEditor.swift"; sourceTree = "<group>"; };
-		E4020904256BA0390077F5DC /* ZLImageEditor.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZLImageEditor.bundle; sourceTree = "<group>"; };
 		E4020909256BA1DE0077F5DC /* ZLImageEditorDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLImageEditorDefine.swift; sourceTree = "<group>"; };
 		E402090D256BA1F40077F5DC /* ZLImageEditorLanguageDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLImageEditorLanguageDefine.swift; sourceTree = "<group>"; };
 		E4020911256BA27D0077F5DC /* ZLImageEditorConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLImageEditorConfiguration.swift; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				E40208DA256B9BA60077F5DC /* ZLImageEditor.h */,
-				E4020904256BA0390077F5DC /* ZLImageEditor.bundle */,
+				70EC86FB26762643008E4338 /* ZLImageEditor.bundle */,
 				E4020902256BA00D0077F5DC /* General */,
 				E4020903256BA01F0077F5DC /* Extensions */,
 				E40208DB256B9BA60077F5DC /* Info.plist */,
@@ -188,7 +188,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4020905256BA0390077F5DC /* ZLImageEditor.bundle in Resources */,
+				70EC86FC26762643008E4338 /* ZLImageEditor.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -43,7 +43,7 @@ public class ZLImageEditorConfiguration: NSObject {
         }
     }
     
-    private var pri_editImageTools: [ZLImageEditorConfiguration.EditImageTool] = [.draw, .clip, .imageSticker, .textSticker, .mosaic, .filter]
+    private var pri_editImageTools: [ZLImageEditorConfiguration.EditImageTool] = [.draw, .clip, .textSticker, .mosaic, .filter]
     /// Edit image tools. (Default order is draw, clip, imageSticker, textSticker, mosaic, filtter)
     /// Because Objective-C Array can't contain Enum styles, so this property is not available in Objective-C.
     /// - warning: If you want to use the image sticker feature, you must provide a view that implements ZLImageStickerContainerDelegate.
@@ -53,7 +53,7 @@ public class ZLImageEditorConfiguration: NSObject {
         }
         get {
             if pri_editImageTools.isEmpty {
-                return [.draw, .clip, .imageSticker, .textSticker, .mosaic, .filter]
+                return [.draw, .clip, .textSticker, .mosaic, .filter]
             } else {
                 return pri_editImageTools
             }
@@ -132,7 +132,7 @@ public class ZLImageEditorConfiguration: NSObject {
     @objc public var showClipDirectlyIfOnlyHasClipTool = false
     
     /// The background color of edit done button.
-    @objc public var editDoneBtnBgColor: UIColor = zlRGB(80, 169, 56)
+    @objc public var editDoneBtnBgColor: UIColor = zlRGB(247, 247, 247)
     
 }
 

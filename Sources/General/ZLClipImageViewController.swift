@@ -251,12 +251,15 @@ class ZLClipImageViewController: UIViewController {
         let toolBtnH: CGFloat = 25
         let toolBtnY = (ZLClipImageViewController.bottomToolViewH - toolBtnH) / 2 - 10
         self.cancelBtn.frame = CGRect(x: 30, y: toolBtnY, width: toolBtnH, height: toolBtnH)
-        let revertBtnW = localLanguageTextValue(.revert).boundingRect(font: ZLImageEditorLayout.bottomToolTitleFont, limitSize: CGSize(width: CGFloat.greatestFiniteMagnitude, height: toolBtnH)).width + 20
-        self.revertBtn.frame = CGRect(x: (self.view.bounds.width-revertBtnW)/2, y: toolBtnY, width: revertBtnW, height: toolBtnH)
-        self.doneBtn.frame = CGRect(x: self.view.bounds.width-30-toolBtnH, y: toolBtnY, width: toolBtnH, height: toolBtnH)
         
         let ratioColViewY = self.bottomToolView.frame.minY - ZLClipImageViewController.clipRatioItemSize.height - 5
         self.rotateBtn.frame = CGRect(x: 30, y: ratioColViewY + (ZLClipImageViewController.clipRatioItemSize.height-25)/2, width: 25, height: 25)
+        
+//        let revertBtnW = localLanguageTextValue(.revert).boundingRect(font: ZLImageEditorLayout.bottomToolTitleFont, limitSize: CGSize(width: CGFloat.greatestFiniteMagnitude, height: toolBtnH)).width + 20
+        self.revertBtn.frame = CGRect(x: self.view.bounds.width-30-toolBtnH, y: ratioColViewY + (ZLClipImageViewController.clipRatioItemSize.height-25)/2 , width: 25, height: 25)
+        
+        self.doneBtn.frame = CGRect(x: self.view.bounds.width-30-toolBtnH, y: toolBtnY, width: toolBtnH, height: toolBtnH)
+      
         let ratioColViewX = self.rotateBtn.frame.maxX + 15
         self.clipRatioColView.frame = CGRect(x: ratioColViewX, y: ratioColViewY, width: self.view.bounds.width - ratioColViewX, height: 70)
         
@@ -322,11 +325,12 @@ class ZLClipImageViewController: UIViewController {
         
         self.revertBtn = UIButton(type: .custom)
         self.revertBtn.setTitleColor(.white, for: .normal)
-        self.revertBtn.setTitle(localLanguageTextValue(.revert), for: .normal)
+//        self.revertBtn.setTitle(localLanguageTextValue(.revert), for: .normal)
+        self.revertBtn.setImage(getImage("zl_revoke_disable"), for: .normal)
         self.revertBtn.zl_enlargeValidTouchArea(inset: 20)
         self.revertBtn.titleLabel?.font = ZLImageEditorLayout.bottomToolTitleFont
         self.revertBtn.addTarget(self, action: #selector(revertBtnClick), for: .touchUpInside)
-        self.bottomToolView.addSubview(self.revertBtn)
+        self.view.addSubview(self.revertBtn)
         
         self.doneBtn = UIButton(type: .custom)
         self.doneBtn.setImage(getImage("zl_right"), for: .normal)

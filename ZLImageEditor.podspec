@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
-  s.name                  = 'ZLImageEditor'
-  s.version               = '1.0.2'
+  s.name                  = 'BQImageEditor'
+  s.version               = '1.0.0'
   s.summary               = 'A powerful image editor framework. Supports graffiti, cropping, mosaic, text stickers, picture stickers, filters.'
 
-  s.homepage              = 'https://github.com/longitachi/ZLImageEditor'
+  s.homepage              = 'https://github.com/XiaHaozheJose/BQImageEditor'
   s.license               = { :type => "MIT", :file => "LICENSE" }
 
   s.author                = {'longitachi' => 'longitachi@163.com'}

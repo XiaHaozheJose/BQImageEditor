@@ -134,7 +134,9 @@ extension Bundle {
                 language = "ms"
             } else if language.hasPrefix("it") {
                 language = "it"
-            } else {
+            } else if language.hasPrefix("es"){
+                language = "es"
+            }else {
                 language = "en"
             }
         case .chineseSimplified:
